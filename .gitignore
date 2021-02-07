@@ -1,0 +1,5 @@
+/directory name
+*.txt
+.pycache
+*.log
+npm
