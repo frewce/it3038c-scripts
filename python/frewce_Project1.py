@@ -6,12 +6,12 @@ total, used, free = shutil.disk_usage("/")
 #states the amount of bytes to take total bytes to gigabytes
 byteAmount = 2**30
 
-#
-print("You have %.2f GB Total." % (float(total) // (byteAmount)))
-print("You have %.2f GB Used." % (float(used) // (byteAmount)))
-print("You have %.2f GB Free." % (float(free) // (byteAmount)))
+#gives to total amount of GB
+print("You have %d GB Total." % (float(total) // (byteAmount)))
+print("You have %d GB Used." % (float(used) // (byteAmount)))
+print("You have %d GB Free." % (float(free) // (byteAmount)))
 
-#This is just to have a bit of space from the extra message
+#This is just to have a bit of space from the error message
 print() 
 
 if free // (byteAmount) < 100:
