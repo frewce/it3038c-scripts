@@ -28,7 +28,7 @@ var freem = os.freemem();
 var totm = os.totalmem();
 
 
-function formatBytes(bytes, decimals = 2) {
+function simplify(bytes, decimals = 2) {
     const k = 1024;
     const dm = decimals < 0 ? 0 : decimals;
     const sizes = ['Bytes', 'KB', 'MB', 'GB'];
@@ -50,8 +50,8 @@ var server = http.createServer(function(req, res) {
     else if(req.url.match("/sysinfo")) {
         myHostName=os.hostname();
         totaluptime=format(time);
-        totalmemory=formatBytes(totm);
-        freememory=formatBytes(freem);
+        totalmemory=simplify(totm);
+        freememory=simplify(freem);
         numberCPU=Object.keys(cpu).length;
         html=`
         <!DOCTYPE html>
