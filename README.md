@@ -12,6 +12,7 @@ Project 2
     while (user_input == "No") or (user_input == "no"):
 
   It prompts to look up a websites IP address. then it gives the ip with a fun emoji and prompts again.
+      
       print ("Ok, look up another.")
       website = (input("Enter a" + str(bomb) + "website: (Ex: www.google.com)"))
       print(website + ': ' + socket.gethostbyname(website) + computer)
