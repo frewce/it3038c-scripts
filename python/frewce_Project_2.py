@@ -8,7 +8,7 @@ computer = emoji.emojize(' :pager:') #if you have an outdated version of pip the
 
 user_input = (input("Would you like to look up a website's IP address? "))
 
-while (user_input == "no") or (user_input == "No"):
+while (user_input == "yes") or (user_input == "Yes"):
 
     print ("Ok, look up another.")
     website = (input("Enter a" + str(bomb) + "website: (Ex: www.google.com)"))
