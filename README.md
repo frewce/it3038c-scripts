@@ -1,33 +1,27 @@
 # it3038c-scripts
-
-Lab 7
-
-I downloaded the pygame plugin, which allows you to make games from python.
-
-Create a vitual environment:
-
-  virtualenv c:\it3038c-scripts\venv\pygame
-  source c:\it3038c-scripts\venv\Webscraping\activate.ps1
   
-Then install pygame:
+Project 2 
+
+  This code is referenced from the getmyIP.py work we did in class. This has the same functions but has emojis from the emoji module to make it fun, as well as a while loop.
+  You start by getting asked if you want to look up a website's IP address.
   
-  pip install pygame
+    user_input = (input("Type no to look up a website's IP address. "))
     
-First we need to make a game window:
-
-  import pygame
-  pygame.init()
-  window = pygame.display.set_mode((800,600)
+  If you want to look up an IP address, you type and say "no" or "No".
   
-Then title the pop-up window:
+    while (user_input == "No") or (user_input == "no"):
 
-  pygame.display.set_caption("Lab 7")
+  It prompts to look up a websites IP address. then it gives the ip with a fun emoji and prompts again.
+      
+      print ("Ok, look up another.")
+      website = (input("Enter a" + str(bomb) + "website: (Ex: www.google.com)"))
+      print(website + ': ' + socket.gethostbyname(website) + computer)
+      user_input = (input("Are you done? "))
+      
+  Type no to keep looking up ip addresses, and when you get tired type anything besides "no" or "No" to leave. 
+  Theres a farewell message.
   
-And last, to make sure it doesn't disappear as soon as its created, a wait command.
-
-  pygame.time.wait(3600)
-  pygame.quit()
-  
-That was the game window you created! Remember to deactivate.
-
-  deactivate
+    else:
+    print("Alright Bye!")
+    
+  This is how you use my code!
