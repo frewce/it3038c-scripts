@@ -18,7 +18,7 @@ Project 2
       print(website + ': ' + socket.gethostbyname(website) + computer)
       user_input = (input("Are you done? "))
       
-  Type no to keep looking up ip addresses, and when you get tired type anything besides "no" or "No" to leave. 
+  Type no to keep looking up ip addresses, and when you get tired type anything besides "yes" or "Yes" to leave. 
   Theres a farewell message.
   
     else:
