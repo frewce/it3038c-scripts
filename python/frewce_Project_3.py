@@ -9,7 +9,7 @@ print(cwd)
 
 print("This is a program to edit images from URLs.")
 userinput = input("Paste a link of an image you want to edit. ")
-# response = requests.get(userinput)
+
 im = urllib.request.urlretrieve(userinput, "sample.png")
 im = Image.open("sample.png")
 print(im.format, im.size, im.mode)
